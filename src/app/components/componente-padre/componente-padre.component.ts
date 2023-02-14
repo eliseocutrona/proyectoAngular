@@ -13,6 +13,7 @@ import { StudentsComponent } from '../students/students.component';
 export class ComponentePadreComponent implements AfterViewInit, OnInit {
   @Input() estudiantesPadre!: Estudiante[];
   @Output() eventoSalidaPadre: EventEmitter<Estudiante> = new EventEmitter<Estudiante>();
+  
   @ViewChild('mensaje') mensajePruebaRef!: ElementRef;
   @ViewChild(StudentsComponent) hijoComponent!: StudentsComponent;
 

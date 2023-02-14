@@ -25,7 +25,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { EditarCursoDialogComponent } from './components/editar-curso-dialog/editar-curso-dialog.component';
 
 import { MaterialModule } from './material.module';
-import { ListaComponent } from './components/lista/lista.component';
 import { StudentsComponent } from './components/students/students.component';
 
 import { ComponentePadreComponent } from './components/componente-padre/componente-padre.component';
@@ -38,7 +37,6 @@ import { ComponentePadreComponent } from './components/componente-padre/componen
     EditarCursoDialogComponent,
     LoginComponent,
     NavbarComponent,
-    ListaComponent,
     LoginAdministradorComponent,
     LoginEstudianteComponent,
     ToolbarComponent,

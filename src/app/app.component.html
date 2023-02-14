@@ -1,21 +1,31 @@
 <!-- <router-outlet></router-outlet> -->
 
-<app-login></app-login> 
+<app-login></app-login>
 
-<div class="container"></div>
+<div class="container">
+  <div class="grid-container">
+    <app-toolbar class="encabezado"></app-toolbar>
+    <app-navbar class="grid-menu"></app-navbar>
 
-<div class="grid-container">
-  <app-toolbar class="encabezado"></app-toolbar>
-  <app-navbar class="grid-menu"></app-navbar>
+    <!-- <app-students class="grid-student"> </app-students> -->
 
-  <!-- <app-students class="grid-student"> </app-students> -->
+    <!-- <app-componente-padre
+      class="grid-student"
+      [estudiantesPadre]="estudiantes"
+      (eventoSalidaPadre)="agregarEstudiante($event)"
+    ></app-componente-padre> -->
 
-  <app-componente-padre
-    class="grid-student"
-    [estudiantesPadre]="estudiantes"
-    (eventoSalidaPadre)="agregarEstudiante($event)"
-  ></app-componente-padre>
+    <!-- <app-componente-padre
+      class="grid-student"
+      [estudiantesPadre]="estudiantes"
+      (eventoSalidaPadre)="agregarEstudiante($event)"
+    ></app-componente-padre> -->
+
+    <!-- <app-componente-padre class="grid-student"> </app-componente-padre> -->
+
+  </div>
+
+  <app-material></app-material>
+
+  <app-students></app-students>
 </div>
-
-<app-material></app-material>
-

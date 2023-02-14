@@ -95,19 +95,10 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
-              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
-              "src/assets/scss/material-dashboard.scss",
-              "src/assets/css/demo.css"
             ],
             "scripts": [  "node_modules/jquery/dist/jquery.js",
             "node_modules/popper.js/dist/umd/popper.js",
-            "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
-            "node_modules/arrive/src/arrive.js",
-            "node_modules/moment/moment.js",
-            "node_modules/perfect-scrollbar/js/perfect-scrollbar.js",
-            "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
-            "node_modules/bootstrap-notify/bootstrap-notify.js",
-            "node_modules/chartist/dist/chartist.js"]
+            "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"
           }
         }
       }
@@ -116,4 +107,26 @@
   "cli": {
     "analytics": "be7d33d8-a47a-4d25-a103-c832a319f8c9"
   }
+}
+,
+"cli": {
+  "analytics": "63f1524b-03d8-47cf-82bb-c65a362a3a00"
+},
+"cli": {
+  "analytics": "b8d71f7a-7015-43c2-b373-5eb676859834"
+},
+"cli": {
+  "analytics": "4c4c615b-8820-4a05-aaa1-f33b6b8f20b1"
+},
+"cli": {
+  "analytics": "ead7b1a0-cb5a-4829-add0-f0fceb3ba01f"
+},
+"cli": {
+  "analytics": "b144749c-fc72-45ab-99e3-ee8c3695b24d"
+},
+"cli": {
+  "analytics": "ccf22f00-65d8-48d6-ac96-d27b20b077e0"
+},
+"cli": {
+  "analytics": "5c6c0ecc-589f-48e1-a1d9-45d20783e7e5"
 }

@@ -1,4 +1,21 @@
 <!-- <router-outlet></router-outlet> -->
-<app-navbar></app-navbar>
 
-<app-sidebar></app-sidebar>
+<app-login></app-login> 
+
+<div class="container"></div>
+
+<div class="grid-container">
+  <app-toolbar class="encabezado"></app-toolbar>
+  <app-navbar class="grid-menu"></app-navbar>
+
+  <!-- <app-students class="grid-student"> </app-students> -->
+
+  <app-componente-padre
+    class="grid-student"
+    [estudiantesPadre]="estudiantes"
+    (eventoSalidaPadre)="agregarEstudiante($event)"
+  ></app-componente-padre>
+</div>
+
+<app-material></app-material>
+

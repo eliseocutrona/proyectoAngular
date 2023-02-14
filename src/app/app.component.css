@@ -1,0 +1,18 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'lateral   lateral    lateral    header  header  header  header  header  header header   header  header'
+    'lateral   lateral    lateral    main    main    main    main    main    main   main     main    main';
+}
+
+.encabezado{
+    grid-area: header;
+}
+
+.grid-menu{
+    grid-area: lateral;
+}
+
+.grid-student{
+    grid-area: main;
+}

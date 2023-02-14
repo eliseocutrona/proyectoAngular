@@ -2,24 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
 
-import { LayoutComponent } from './components/layout/layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'app',
     pathMatch: 'full',
   },
   {
     path: '',
-    component: LayoutComponent,
+    component: AppComponent,
     children: [
       {
         path: '',
         loadChildren: () =>
-          import('./components/layout/layout.component').then(
-            (m) => m.LayoutComponent
+          import('./app.component').then(
+            (m) => m.AppComponent
           ),
       },
     ],

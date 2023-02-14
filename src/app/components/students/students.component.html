@@ -1,48 +1,4 @@
-<!-- <div class="students">
-    <div class="clase-hijo">
-        <h4>Este mensaje es desde el componente app-componete-hijo</h4>
-        <ol>
-            <li *ngFor="let estudiante of estudiantesHijo">
-                <p>Nombre: {{ estudiante.nombre }}</p>
-                <p>Curso: {{ estudiante.curso }} </p>
-                <p>Esta activo: {{ estudiante.activo }}</p>
-                <p>Nota media: {{ estudiante.notaMedia }}</p>
-                <p>Sexo: {{ estudiante.sexo }}</p>
-                <p>Perfil: {{ estudiante.perfil }}</p>
 
-            </li>
-        </ol>
-    
-        <div class="formulario">
-            <div class="row">
-                <div class="col">
-                    <input type="text" [(ngModel)]="nombre" placeholder="Nombre" (keyup)="actualizarNombre()">
-                </div>
-                <div class="col">
-                    <input type="text" [(ngModel)]="curso" placeholder="Curso">
-                </div>
-                <div class="col">
-                    <input type="checkbox" [(ngModel)]="activo" >
-                    <label>Activo</label>
-                </div>
-                <div class="col">
-                    <input type="number" placeholder="Nota Media" [(ngModel)]="notaMedia" >
-                </div>
-
-                <div class="col">
-                    <input type="text" [(ngModel)]="sexo" placeholder="Sexo">
-                </div>
-
-                <div class="col">
-                    <input type="text" [(ngModel)]="perfil" placeholder="Perfil">
-                </div>
-            </div>
-            <div class="row">
-                <button (click)="agregarEstudiante()">Agregar estudiante</button>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <h4>Demo de tabla en Angular Material</h4>
 
@@ -53,16 +9,42 @@
         <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
     </ng-container>
 
-    <!-- Columna de comision -->
-    <ng-container matColumnDef="comision">
-        <th mat-header-cell *matHeaderCellDef>Comision</th>
-        <td mat-cell *matCellDef="let element">{{ element.comision }}</td>
+    <!-- Columna de curso -->
+    <ng-container matColumnDef="curso">
+        <th mat-header-cell *matHeaderCellDef>Curso</th>
+        <td mat-cell *matCellDef="let element">{{ element.curso }}</td>
     </ng-container>
 
     <!-- Columna de profesor -->
-    <ng-container matColumnDef="profesor">
-        <th mat-header-cell *matHeaderCellDef>Profesor</th>
-        <td mat-cell *matCellDef="let element">{{ element.profesor }}</td>
+    <ng-container matColumnDef="activo">
+        <th mat-header-cell *matHeaderCellDef>Activo</th>
+        <td mat-cell *matCellDef="let element">{{ element.activo }}</td>
+    </ng-container>
+
+     <!-- Columna de profesor -->
+     <ng-container matColumnDef="activo">
+        <th mat-header-cell *matHeaderCellDef>Activo</th>
+        <td mat-cell *matCellDef="let element">{{ element.activo }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="notaMedia">
+        <th mat-header-cell *matHeaderCellDef>notaMedia</th>
+        <td mat-cell *matCellDef="let element">{{ element.notaMedia }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="notaMedia">
+        <th mat-header-cell *matHeaderCellDef>notaMedia</th>
+        <td mat-cell *matCellDef="let element">{{ element.notaMedia }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="sexo">
+        <th mat-header-cell *matHeaderCellDef>sexo</th>
+        <td mat-cell *matCellDef="let element">{{ element.sexo }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="perfil">
+        <th mat-header-cell *matHeaderCellDef>perfil</th>
+        <td mat-cell *matCellDef="let element">{{ element.perfil }}</td>
     </ng-container>
 
     <!-- Columna de profesor -->
@@ -72,8 +54,16 @@
             <button mat-icon-button color="primary">
                 <mat-icon>edit</mat-icon>
             </button>
-            <button mat-icon-button color="warn">
+            <!-- <button mat-icon-button color="warn">
                 <mat-icon>payments</mat-icon>
+            </button> -->
+
+            <button mat-icon-button color="primary">
+                <mat-icon>delete</mat-icon>
+            </button>
+
+            <button mat-icon-button color="primary">
+                <mat-icon>add</mat-icon>
             </button>
         </td>
     </ng-container>

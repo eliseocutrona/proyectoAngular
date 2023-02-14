@@ -13,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
-import { MaterialComponent } from './components/material/material.component';
 
 import { LoginComponent } from './components/login/login.component';
 import { LoginAdministradorComponent } from './components/login-administrador/login-administrador.component';
@@ -27,13 +26,9 @@ import { EditarCursoDialogComponent } from './components/editar-curso-dialog/edi
 import { MaterialModule } from './material.module';
 import { StudentsComponent } from './components/students/students.component';
 
-import { ComponentePadreComponent } from './components/componente-padre/componente-padre.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentePadreComponent,
-    MaterialComponent,
     EditarCursoDialogComponent,
     LoginComponent,
     NavbarComponent,

@@ -25,30 +25,32 @@ import { EditarCursoDialogComponent } from './components/editar-curso-dialog/edi
 
 import { MaterialModule } from './material.module';
 import { StudentsComponent } from './components/students/students.component';
+import { ToastComponent } from "./components/toast/toast.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    EditarCursoDialogComponent,
-    LoginComponent,
-    NavbarComponent,
-    LoginAdministradorComponent,
-    LoginEstudianteComponent,
-    ToolbarComponent,
-    StudentsComponent,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    ReactiveFormsModule,
-    CommonModule,
-    RouterModule,
-    FormsModule,
-    HttpClientModule,
-    AppRoutingModule,
-  ],
+    declarations: [
+        AppComponent,
+        EditarCursoDialogComponent,
+        LoginComponent,
+        NavbarComponent,
+        LoginAdministradorComponent,
+        LoginEstudianteComponent,
+        ToolbarComponent,
+        StudentsComponent,ToastComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        ReactiveFormsModule,
+        CommonModule,
+        RouterModule,
+        FormsModule,
+        HttpClientModule,
+        AppRoutingModule
+        
+    ]
 })
 export class AppModule {}

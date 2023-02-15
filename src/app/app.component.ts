@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  loggedIn = true;
+
+  logIn() {
+    this.loggedIn = true;
+  }
+
+  logOut() {
+    this.loggedIn = false;
+  }
 
  // Angular Material
 //  estudiantes: Estudiante[] = [

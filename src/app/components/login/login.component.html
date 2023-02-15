@@ -1,24 +1,158 @@
-<form [formGroup]="formularioLogin" (ngSubmit)="login()" class="was-validated">
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Correo</label>
-        <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="valid-feedback" 
-        >Campo correcto</div>
-        <div class="invalido" *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['required']">El campo correo no puede ser vacío</div>
-        <div class="invalido" *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['pattern']">El campo correo tiene un formato incorrecto</div>
+<div id="login">
+  <section id="login-right">
+    <div id="login-title-description">
+      <h1>{{ hasAccount ? "Hola de Nuevo!" : "Bienvenido" }}</h1>
     </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-        <input formControlName="contrasena" type="password" class="form-control" id="exampleInputPassword1">
-        <div class="valido" *ngIf="formularioLogin.controls['contrasena'].dirty && formularioLogin.controls['contrasena'].valid">Campo correcto</div>
-        <div class="invalido" *ngIf="formularioLogin.controls['contrasena'].dirty && formularioLogin.controls['contrasena'].errors?.['required']">El campo contraseña no puede ser vacío</div>
-        <div class="invalido" *ngIf="formularioLogin.controls['contrasena'].dirty && formularioLogin.controls['contrasena'].errors?.['minlength']">El campo contrasenña debe tener al menos 6 caracteres</div>
-    </div>
-    <div class="mb-3 form-check">
-        <input formControlName="recordarCredenciales" type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Recordar credenciales</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
+    <form id="login-form" method="GET" (ngSubmit)="login()" [formGroup]="form">
+      <div *ngIf="!hasAccount" id="signup-name-container">
+        <div class="user-input-container">
+          <label for="Nombre" class="form-label">Nombre</label>
+
+          <input
+            type="text"
+            placeholder="nombre"
+            formControlName="nombre"
+            class="form-control"
+          />
+
+          <div class="valid-feedback">Campo correcto</div>
+          <div
+            class="invalido"
+            *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['required']"
+          >
+            El campo correo no puede ser vacío
+          </div>
+          <div
+            class="invalido"
+            *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['pattern']"
+          >
+            El campo correo tiene un formato incorrecto
+          </div>
+        </div>
+
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['required']"
+        >
+          El campo correo no puede ser vacío
+        </div>
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['pattern']"
+        >
+          El campo correo tiene un formato incorrecto
+        </div>
+        <div class="user-input-container">
+          <label for="surname">Apellido</label>
+          <input
+            type="text"
+            placeholder="Apellido"
+            formControlName="surname"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="">
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          formControlName="correo"
+          class="form-control"
+        />
+
+        <div class="valid-feedback">Campo correcto</div>
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['required']"
+        >
+          El campo correo no puede ser vacío
+        </div>
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['correo'].dirty && formularioLogin.controls['correo'].errors?.['pattern']"
+        >
+          El campo correo tiene un formato incorrecto
+        </div>
+      </div>
+      <div class="">
+        <label for="password">Contraseña</label>
+        <input
+          type="password"
+          placeholder="Contraseña"
+          formControlName="password"
+          class="form-control"
+        />
+
+        <div
+          class="valido"
+          *ngIf="
+            formularioLogin.controls['contrasena'].dirty &&
+            formularioLogin.controls['contrasena'].valid
+          "
+        >
+          Campo correcto
+        </div>
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['contrasena'].dirty && formularioLogin.controls['contrasena'].errors?.['required']"
+        >
+          El campo contraseña no puede ser vacío
+        </div>
+        <div
+          class="invalido"
+          *ngIf="formularioLogin.controls['contrasena'].dirty && formularioLogin.controls['contrasena'].errors?.['minlength']"
+        >
+          El campo contrasenña debe tener al menos 6 caracteres
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input
+          formControlName="recordarCredenciales"
+          type="checkbox"
+          class="form-check-input"
+          id="exampleCheck1"
+        />
+        <label class="form-check-label" for="exampleCheck1"
+          >Recordar credenciales</label
+        >
+      </div>
+    </form>
+    <p *ngIf="hasAccount" class="">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+    </p>
+    <button
+      id="login-button"
+      type="submit"
+      form="login-form"
+      button
+      type="button"
+      class="btn btn-primary"
+    >
+      {{ hasAccount ? "Iniciar sesión" : "Regístrate" }}
+    </button>
     <button type="reset" class="btn btn-secondary">Reset</button>
-    <button type="button" class="btn btn-danger">Registro</button>
-</form>
+
+    <p class="login-continue-with-text">O continua con</p>
+    <div id="login-social">
+      <button *ngFor="let social of ['google.png', 'facebook.png']">
+        <img
+          [src]="'assets/images/' + social"
+          [alt]="social"
+          width="35px"
+          height="35px"
+        />
+      </button>
+    </div>
+    <p class="login-register-text">
+      {{ hasAccount ? "¿No tienes una cuenta?" : "¿Ya tienes cuenta?" }}
+      <a (click)="changeLoginMode()" href="#">{{
+        hasAccount ? "Regístrate" : "Inicia sesión"
+      }}</a>
+    </p>
+  </section>
+  <div *ngIf="form.invalid && submitted">
+    <app-toast [messages]="getErrorMessages()"> </app-toast>
+  </div>
+</div>

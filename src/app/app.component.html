@@ -1,28 +1,35 @@
 <!-- <router-outlet></router-outlet> -->
-
+<!-- 
 <app-login></app-login>
 
   <div class="grid-container">
     <app-toolbar class="encabezado"></app-toolbar>
-    <app-navbar class="grid-menu"></app-navbar>
+    <app-navbar class="grid-menu"></app-navbar> -->
 
-
-    <!-- <app-componente-padre
+<!-- <app-componente-padre
       class="grid-student"
       [estudiantesPadre]="estudiantes"
       (eventoSalidaPadre)="agregarEstudiante($event)"
     ></app-componente-padre> -->
 
-    <!-- <app-componente-padre
+<!-- <app-componente-padre
       class="grid-student"
       [estudiantesPadre]="estudiantes"
       (eventoSalidaPadre)="agregarEstudiante($event)"
     ></app-componente-padre> -->
 
-    <!-- <app-componente-padre class="grid-student"> </app-componente-padre> -->
+<!-- <app-componente-padre class="grid-student"> </app-componente-padre> -->
 
-  </div>
+<!-- </div> -->
+
+<!-- <app-students > </app-students> -->
+
+<!-- <app-layout *ngIf="loggedIn" (loggingOut)="logOut()"></app-layout> -->
+<!-- <app-login
+  [hasAccount]="false"
+  (loggingIn)="logIn()"
+  *ngIf="!loggedIn"
+></app-login> -->
 
 
-  <app-students > </app-students>
-
+<app-login [hasAccount]="false"(loggingIn)="logIn()"*ngIf="loggedIn"></app-login>

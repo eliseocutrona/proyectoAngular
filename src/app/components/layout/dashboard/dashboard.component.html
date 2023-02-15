@@ -1,0 +1,26 @@
+<div id="dashboard-container">
+  <section id="dashboard" class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div id="dashboard-title">
+        <h1>{{ "Usuarios" }}</h1>
+        <p>Visualiza datos de los estudiantes</p>
+      </div>
+      <p id="add-student-btn-text" class="text-end">
+        <button
+          mat-raised-button
+          id="add-student-btn"
+          (click)="openAddStudentDialog()"
+        >
+          <mat-icon> add</mat-icon>
+          Crea un usuario
+        </button>
+      </p>
+    </div>
+
+    <app-table
+      (onStudentUpdate)="onStudentUpdate($event)"
+      (onStudentDelete)="onStudentDelete($event)"
+    >
+    </app-table>
+  </section>
+</div>

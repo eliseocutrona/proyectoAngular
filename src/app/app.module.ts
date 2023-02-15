@@ -13,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
-
 import { LoginComponent } from './components/login/login.component';
 import { LoginAdministradorComponent } from './components/login-administrador/login-administrador.component';
 import { LoginEstudianteComponent } from './components/login-estudiante/login-estudiante.component';
@@ -25,32 +24,33 @@ import { EditarCursoDialogComponent } from './components/editar-curso-dialog/edi
 
 import { MaterialModule } from './material.module';
 import { StudentsComponent } from './components/students/students.component';
-import { ToastComponent } from "./components/toast/toast.component";
+import { ToastComponent } from './components/toast/toast.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        EditarCursoDialogComponent,
-        LoginComponent,
-        NavbarComponent,
-        LoginAdministradorComponent,
-        LoginEstudianteComponent,
-        ToolbarComponent,
-        StudentsComponent,ToastComponent
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MaterialModule,
-        ReactiveFormsModule,
-        CommonModule,
-        RouterModule,
-        FormsModule,
-        HttpClientModule,
-        AppRoutingModule
-        
-    ]
+  declarations: [
+    AppComponent,
+    EditarCursoDialogComponent,
+    LoginComponent,
+    NavbarComponent,
+    LoginAdministradorComponent,
+    LoginEstudianteComponent,
+    ToolbarComponent,
+    StudentsComponent,
+    ToastComponent,
+    
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+  ],
 })
 export class AppModule {}

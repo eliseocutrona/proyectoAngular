@@ -1,8 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
-
-
-
+import {
+  FormControl,
+  FormGroup,
+  Validators,
+  AbstractControl,
+} from '@angular/forms';
 
 const controlNames = new Map<string, string>([
   ['name', 'nombre'],
@@ -16,9 +18,6 @@ const controlNames = new Map<string, string>([
   ['admissionDate', 'fecha de admisión'],
 ]);
 
-
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -29,7 +28,6 @@ export class LoginComponent {
   @Output() public loggingIn = new EventEmitter();
 
   private regexCorreo: string = '^[a-z]+@[a-z]+\\.[a-z]{2,3}$';
-
 
   formularioLogin: FormGroup;
 
@@ -68,8 +66,6 @@ export class LoginComponent {
       recordarCredenciales: new FormControl(true),
     };
     this.formularioLogin = new FormGroup(controles);
-
-  
   }
 
   public get form(): FormGroup {
@@ -109,12 +105,7 @@ export class LoginComponent {
     this.loggingIn.emit();
 
     console.log(this.formularioLogin);
-
-    
   }
-
-
-  
 }
 
 export const getErrorMessages = (formGroup: FormGroup): string[] => {

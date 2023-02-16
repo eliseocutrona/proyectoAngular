@@ -10,7 +10,8 @@
         "phone": "123456789",
         "city": "Madrid",
         "averageGrade": 4.75,
-        "career": "Administración"
+        "career": "Administración",
+        "Curso": "Angular"
     },
     {
         "id": "2",
@@ -23,7 +24,8 @@
         "city": "Montevideo",
         "birthDate": "1990-01-01T00:00:00.000Z",
         "averageGrade": 10,
-        "career": "Diseño Gráfico"
+        "career": "Diseño Gráfico",
+        "Curso": "Angular"
     },
     {
         "id": "3",
@@ -36,7 +38,8 @@
         "city": "Buenos Aires",
         "birthDate": "1990-01-01T00:00:00.000Z",
         "averageGrade": 1.5,
-        "career": "Desarrollo Web"
+        "career": "Desarrollo Web",
+        "Curso": "Angular"
     },
     {
         "id": "4",
@@ -49,7 +52,8 @@
         "city": "Sidney",
         "birthDate": "1990-01-01T00:00:00.000Z",
         "averageGrade": 5.5,
-        "career": "Desarrollo Web"
+        "career": "Desarrollo Web",
+        "Curso": "Angular"
     },
     {
         "id": "5",
@@ -62,7 +66,8 @@
         "phone": "123456789",
         "city": "Barcelona",
         "averageGrade": 9,
-        "career": "Ciencia de Datos"
+        "career": "Ciencia de Datos",
+        "Curso": "Angular"
     },
     {
         "id": "6",
@@ -75,7 +80,8 @@
         "phone": "123456789",
         "city": "Barcelona",
         "averageGrade": 8.8,
-        "career": "Ciberseguridad"
+        "career": "Ciberseguridad",
+        "Curso": "Angular"
     }
 ]
     

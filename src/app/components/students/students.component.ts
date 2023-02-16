@@ -3,7 +3,6 @@ import { Estudiante } from 'src/app/models/estudiante';
 
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
-import { EditarCursoDialogComponent } from '../editar-curso-dialog/editar-curso-dialog.component';
 
 @Component({
   selector: 'app-students',
@@ -13,34 +12,34 @@ import { EditarCursoDialogComponent } from '../editar-curso-dialog/editar-curso-
 export class StudentsComponent  {
   constructor(private dialog: MatDialog) {}
   // Angular Material
-  estudiantes: Estudiante[] = [
-    {
-      nombre: 'Fernando',
-      curso: 'Angular',
-      activo: true,
-      notaMedia: 8.2,
-      sexo: 'femenino',
-      perfil: 'desarrollador it',
-    },
-    {
-      nombre: 'Gabriela',
-      curso: 'Angular',
-      activo: true,
-      notaMedia: 2.2,
-      sexo: 'masculino',
-      perfil: 'desarrollador it',
-    },
-  ];
-  dataSource: MatTableDataSource<Estudiante> =
-    new MatTableDataSource<Estudiante>(this.estudiantes);
+  // estudiantes: Estudiante[] = [
+  //   {
+  //     name: 'Fernando',
+  //     Curso: 'Angular',
+  //     activo: true,
+  //     notaMedia: 8.2,
+  //     sexo: 'femenino',
+  //     perfil: 'desarrollador it',
+  //   },
+  //   {
+  //     name: 'Gabriela',
+  //     Curso: 'Angular',
+  //     activo: true,
+  //     notaMedia: 2.2,
+  //     sexo: 'masculino',
+  //     perfil: 'desarrollador it',
+  //   },
+  // ];
+  // dataSource: MatTableDataSource<Estudiante> =
+  //   new MatTableDataSource<Estudiante>(this.estudiantes);
 
-  columnas: string[] = ['nombre', 'curso', 'activo','notaMedia','sexo','perfil','acciones'];
+  // columnas: string[] = ['nombre', 'Curso', 'activo','notaMedia','sexo','perfil','acciones'];
 
   // @Input() estudiantesHijo!: Estudiante[];
   // @Output() eventoSalidaEstudiante: EventEmitter<Estudiante> =
   //   new EventEmitter<Estudiante>();
   // nombre!: string;
-  // curso!: string;
+  // Curso!: string;
   // activo!: boolean;
   // notaMedia!: number;
   // sexo!: string;
@@ -49,7 +48,7 @@ export class StudentsComponent  {
   // agregarEstudiante() {
   //   let estudiante: Estudiante = {
   //     nombre: this.nombre,
-  //     curso: this.curso,
+  //     Curso: this.Curso,
   //     activo: this.activo,
   //     notaMedia: this.notaMedia,
   //     sexo: this.sexo,

@@ -11,8 +11,9 @@
           <input
             type="text"
             placeholder="nombre"
-            formControlName="nombre"
+            formControlName="name"
             class="form-control"
+            [appValidInput]="isValidInput('name')"
           />
 
           <div class="valid-feedback">Campo correcto</div>
@@ -49,6 +50,7 @@
             placeholder="Apellido"
             formControlName="surname"
             class="form-control"
+            [appValidInput]="isValidInput('surname')"
           />
         </div>
       </div>
@@ -57,8 +59,9 @@
         <input
           type="email"
           placeholder="Correo electrónico"
-          formControlName="correo"
+          formControlName="email"
           class="form-control"
+          [appValidInput]="isValidInput('email')"
         />
 
         <div class="valid-feedback">Campo correcto</div>
@@ -82,6 +85,7 @@
           placeholder="Contraseña"
           formControlName="password"
           class="form-control"
+          [appValidInput]="isValidInput('password')"
         />
 
         <div

@@ -24,9 +24,10 @@
 
 <!-- <app-students > </app-students> -->
 
-<!-- <app-layout *ngIf="loggedIn" (loggingOut)="logOut()"></app-layout> -->
+  <app-layout *ngIf="loggedIn" (loggingOut)="logOut()"></app-layout>
 
-
-<app-layout *ngIf="loggedIn" (loggingOut)="logOut()"></app-layout>
-
-<app-login [hasAccount]="false"(loggingIn)="logIn()"*ngIf="!loggedIn"></app-login>
+<app-login
+  [hasAccount]="false"
+  (loggingIn)="logIn()"
+  *ngIf="!loggedIn"
+></app-login>

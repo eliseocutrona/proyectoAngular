@@ -1,7 +1,110 @@
-.valido{
-    color: rgb(0, 95, 0);
+.valido {
+  color: rgb(0, 95, 0);
 }
 
-.invalido{
-    color: rgb(127, 0, 0);
+.invalido {
+  color: rgb(127, 0, 0);
+}
+
+.signup-name-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  gap: 2%;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 0;
+}
+.login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  gap: 3%;
+  flex-grow: 1;
+}
+
+.login-title-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+p {
+  margin: 0;
+  color: black;
+  width: 70%;
+}
+
+.input {
+  height: 2.75rem;
+}
+.label {
+  color: black;
+}
+.a {
+  text-decoration: none;
+}
+
+.login-forgot-password-text {
+  text-align: end;
+}
+.login-continue-with-text,
+.login-register-text {
+  text-align: center;
+}
+
+.login-button {
+  border: solid 1px black;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 70%;
+  height: 2.75rem;
+  background: gray;
+  color: white;
+  padding: 2%;
+  font-weight: 501;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-button:hover {
+  opacity: 0.8;
+}
+.user-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 70%;
+}
+input {
+  width: 100%;
+}
+form {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+}
+.button:hover {
+  opacity: 0.5;
 }

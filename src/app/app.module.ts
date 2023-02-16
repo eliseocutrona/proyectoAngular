@@ -5,8 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,13 +16,21 @@ import { LoginAdministradorComponent } from './components/login-administrador/lo
 import { LoginEstudianteComponent } from './components/login-estudiante/login-estudiante.component';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 import { EditarCursoDialogComponent } from './components/editar-curso-dialog/editar-curso-dialog.component';
 
 import { MaterialModule } from './material.module';
 import { StudentsComponent } from './components/students/students.component';
 import { ToastComponent } from './components/toast/toast.component';
+import { LayoutComponent } from './layout/layout.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TableComponent } from './components/table/table.component';
+import { FullNamePipe } from './components/pipes/pipes.component';
+import { AddUserFormComponent } from './components/add-user-form/add-user-form.component';
+import { ValidInputDirective } from './directives/valid-input/valid-input.directive';
+import { ConfirmModalComponent } from './components/confirm-modal/confirm-modal.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,15 @@ import { ToastComponent } from './components/toast/toast.component';
     ToolbarComponent,
     StudentsComponent,
     ToastComponent,
-    
+    LayoutComponent,
+    MenuComponent,
+    DashboardComponent,
+    TableComponent,
+    FullNamePipe,
+    AddUserFormComponent,
+    ValidInputDirective,
+    ConfirmModalComponent,
+    LayoutComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -50,7 +64,6 @@ import { ToastComponent } from './components/toast/toast.component';
     RouterModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
   ],
 })
 export class AppModule {}

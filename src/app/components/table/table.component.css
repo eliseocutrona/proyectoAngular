@@ -1,0 +1,18 @@
+.students-table {
+  overflow-x: auto;
+  border-radius: 5px 5px 0 0;
+}
+.table {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.mat-mdc-header-row {
+  background-color: lightblue;
+}
+.mat-mdc-header-cell {
+  color: black !important;
+}
+.tbody {
+  --bs-table-bg: black;
+}

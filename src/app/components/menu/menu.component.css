@@ -1,0 +1,42 @@
+
+#left-menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100vh - tb.10vh;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+a {
+  color: gray;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+.nav {
+  flex-wrap: nowrap;
+}
+.nav-link {
+  border-radius: 0;
+  width: 100%;
+  padding: 5% 5% 5% 7.5%;
+}
+
+.menu-dropdown-item {
+  border: none;
+}
+.menu-dropdown-item:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.left-menu {
+  width: 0 !important;
+  font-size: 0;
+}
+
